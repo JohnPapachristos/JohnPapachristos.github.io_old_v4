@@ -29,6 +29,8 @@ color: #ffffff;
   margin-bottom: 30px;
   text-align:center;
   font-family:papyrus;
+	padding-bottom: 1em;
+border-bottom: solid 3px rgba(255, 255, 255, 0.125);
 }
 
 .header-main {
@@ -42,6 +44,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(149,96,35,1) 100%, rg
   margin-bottom: 30px;
   text-align:center;
   font-family:papyrus;
+	padding-bottom: 3em;
+border-bottom: solid 7px rgba(255, 255, 255, 0.125);
 }
 
 span {
