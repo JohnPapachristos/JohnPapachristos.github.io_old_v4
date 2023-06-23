@@ -24,8 +24,9 @@ body {
 }
 
 .header {
-  background: rgb(0,0,0);
-background: linear-gradient(47deg, rgba(0,0,0,1) 28%, rgba(65,98,1,1) 92%);
+ background-color: #292C35;
+	padding-bottom: 1em;
+	border-bottom: solid 3px rgba(255, 255, 255, 0.125);
   color: #ffffff;
   padding: 15px;
   margin: -8.5px;
@@ -181,8 +182,7 @@ span {
 @keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 
 .aside {
-  background: rgb(0,0,0);
-background: linear-gradient(47deg, rgba(0,0,0,1) 28%, rgba(65,98,1,1) 92%);
+	 background-color: #292C35;
   padding: 15px;
   color: white;
   text-align: center;
