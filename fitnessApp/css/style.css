@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+
+}
+
+body {
+  background-image: url("../img/background.png");
+  background-repeat: repeat;
+}
+
+.header {
+  background: rgb(0,0,0);
+background: linear-gradient(47deg, rgba(0,0,0,1) 28%, rgba(65,98,1,1) 92%);
+  color: #ffffff;
+  padding: 15px;
+  margin: -8.5px;
+  margin-bottom: 30px;
+  text-align:center;
+}
+
+span {
+  content: "\2758";
+} 
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #333D51;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* CSS */
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+
+
+.menu li:hover {
+  background-color: #004600;
+}
+
+.active {
+	background-color: #004600 !important;
+}
+
+.menuButton {
+	color: white;
+}
+
+.title-animate-left{
+	position:relative;
+	animation:animateleft 0.9s
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.title-animate-right {
+	position:relative;
+	animation:animateright 0.9s
+}
+
+.dark-mode {
+	float:right;
+	background-color: #707070;
+	
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: dark-gray;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: light-gray;
+}
+
+/* CSS */
+.button-35 {
+  align-items: center;
+
+  background-color: black;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-35:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.aside {
+  background: rgb(0,0,0);
+background: linear-gradient(47deg, rgba(0,0,0,1) 28%, rgba(65,98,1,1) 92%);
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 15%;
+}
+
+.footer {
+  background-color: #292C35;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  margin: -8.5px;
+  margin-top: 30px;
+}
+
+.footerA {
+	padding-bottom: 1em;
+	border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+}
+
+.footerB {
+	padding-top: 1em;
+	border-top: solid 2px rgba(255, 255, 255, 0.125);
+}	
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
